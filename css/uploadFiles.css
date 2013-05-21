@@ -1,0 +1,79 @@
+/* Page layout styles */
+.contr {
+	background-color: #212121;
+	color: #FFFFFF;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+}
+
+.info {
+	float: left;
+	height: 300px;
+	margin: 20px;
+	position: relative;
+	width: 560px;
+}
+
+}
+.info>div {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 15px 5px;
+}
+
+.info>h2 {
+	padding: 0 15px;
+}
+
+.info>canvas {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.info #url {
+	width: 400px;
+}
+
+#dropArea {
+	background-color: #b0b3b6;
+	border: 1px solid #DDDDDD;
+	float: left;
+	font-size: 14px;
+	height: 300px;
+	line-height: 270px;
+	margin: 20px;
+	position: relative;
+	text-align: center;
+	width: 300px;
+	-webkit-border-radius: 10px;
+	color: #666;
+}
+
+#dropArea.hover {
+	background-color: #CCCCCC;
+}
+
+#dropArea.uploading {
+	background: #EEEEEE url(loading.gif) center 30% no-repeat;
+}
+
+#result .s,#result .f {
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#result .f {
+	background-color: #fcc577;
+}
+
+.container {
+	height: 340px;
+	width: 100%;
+}

@@ -1,0 +1,133 @@
+body {
+	font-family: Arial;
+	font-size: 12px;
+	color: #666;
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #313d45;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 22px;
+	color: #2E3940;
+}
+
+h2 {
+	font-size: 18px;
+	color: #2E3940;
+}
+
+h3 {
+	color: #2E3940;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+
+#header,#content {
+	width: 100%
+}
+
+#menu {
+	width: 100%;
+}
+
+#menu td {
+	width: 20%;
+	height: 30px;
+}
+
+#tabs {
+	width: 1200px;
+}
+
+.tableHeader {
+	width: 100%;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.userData {
+	font-size: 14px;
+}
+
+.userData a {
+	font-size: 12px;
+	color: #999;
+}
+
+#main {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+.errosMsg {
+	color: red;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#addContact,.delete, .inputButton {
+	cursor: pointer;
+}
+
+.inputButton {
+	outline: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #f5f3f3;
+	padding: 3px;
+	color: #000;
+}
+
+.borderBottom{
+	border-bottom: 1px solid #CCC;
+}
+
+.pointerArrow{
+	cursor: pointer;
+}
+.actorDemandado{
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+
+.etapaTop{
+	border-left: 2px solid #CCC; width: 16%;
+	font-size: 10px;
+}
+
+.etapaBotton{
+	border-bottom: 2px solid #CCC;
+}
+
+.tableTarea input,textarea{
+	width: 200px;
+}
+
+.tableTarea select{
+	width: 207px;
+}
+
+.tableTarea textarea {
+	height: 60px;
+}
+
+.tableTarea{
+	font-weight: bold;
+}

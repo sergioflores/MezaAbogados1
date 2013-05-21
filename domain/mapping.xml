@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+	<entity name="Abogados">
+		<id namae="id_abogado" />
+		<property name="nombre" type="varchar" />
+		<property name="correo" type="varchar" />
+		<property name="telefono" type="varchar" />
+		<property name="extension" type="int" />
+
+		<property name="celular" type="varchar" />
+		<property name="costoHora" type="float" />
+		<property name="password" type="varchar" />
+		<property name="status" type="varchar" />
+	</entity>
+
+	<entity name="Clientes">
+		<id namae="id_cliente" />
+		<property name="tipo" type="varchar" />
+		<property name="nombreEmpresa" type="varchar" />
+		<property name="paginaWeb" type="varchar" />
+		<property name="sindicato" type="varchar" />
+		<property name="facebook" type="varchar" />
+		<property name="comentarios" type="varchar" />
+		<property name="quienRefiere" type="varchar" />
+		<property name="datoEconomico" type="double" />
+		<property name="iguala" type="double" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="Contactos">
+		<id name="id_contacto" />
+		<property name="id_cliente" type="double" />
+		<property name="nombre" type="varchar" />
+		<property name="telefono" type="varchar" />
+		<property name="extension" type="varchar" />
+		<property name="celular" type="varchar" />
+		<property name="correo" type="varchar" />
+		<property name="puesto" type="varchar" />
+		<property name="facebook" type="varchar" />
+		<property name="twitter" type="varchar" />
+		<property name="fechaCumpleanos" type="varchar" />
+		<property name="comentario" type="varchar" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="DatosFiscales">
+		<id name="id_datosFiscales" />
+		<property name="rfc" type="varchar" />
+		<property name="nombre" type="varchar" />
+		<property name="calle" type="varchar" />
+		<property name="nroExterior" type="varchar" />
+		<property name="nroInterior" type="varchar" />
+		<property name="colonia" type="varchar" />
+		<property name="codigoPostal" type="varchar" />
+		<property name="municipio" type="varchar" />
+		<property name="estado" type="varchar" />
+		<property name="pais" type="varchar" />
+		<property name="correoFacturacion" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="ClientesDatosFiscales">
+		<id name="id_clientesDatosFiscales" />
+		<property name="id_datosFiscales" type="double" />
+		<property name="id_cliente" type="double" />
+		<property name="tipo" type="double" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="TipoCaso">
+		<id name="id_tipo_caso" />
+		<property name="nombre" />
+	</entity>
+	<entity name="TipoEtapas">
+		<id name="id_tipo_etapa" />
+		<property name="nombre" />
+		<property name="status" />
+	</entity>
+	<entity name="Gastos">
+		<id name="id_gasto" />
+		<property name="id_caso" />
+		<property name="tipo" />
+		<property name="concepto" />
+		<property name="valor" />
+	</entity>
+	<entity name="Costos">
+		<id name="id_costo" />
+		<property name="id_caso" />
+		<property name="tipo" />
+		<property name="concepto" />
+		<property name="valor" />
+	</entity>
+	<entity name="ArchivosAdjuntos">
+		<id name="id_archivoAdjunto" />
+		<property name="id_cliente" type="double" />
+		<property name="nombre" type="varchar" />
+		<property name="descripcion" type="varchar" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="Grupos">
+		<id name="id_grupo" />
+		<property name="descripcion" type="varchar" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="alias" type="varchar" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="Regiones">
+		<id name="id_region" />
+		<property name="descripcion" type="varchar" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="alias" type="varchar" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="ClientesDatosSociales">
+		<id name="id_clientesDatosSociales" />
+		<property name="id_cliente" type="double" />
+		<property name="id_datosSociales" type="double" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="GruposDatosSociales">
+		<id name="id_gruposDatosSociales" />
+		<property name="id_grupo" type="double" />
+		<property name="id_datosSociales" type="double" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="RegionesDatosSociales">
+		<id name="id_regionesDatosSociales" />
+		<property name="id_region" type="double" />
+		<property name="id_datosSociales" type="double" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="GruposRegiones">
+		<id name="id_gruposRegiones" />
+		<property name="id_region" type="double" />
+		<property name="id_grupo" type="double" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="ClienteGrupo">
+		<id name="id_clienteGrupo" />
+		<property name="id_cliente" type="double" />
+		<property name="id_grupo" type="double" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="ClienteRegion">
+		<id name="id_clienteRegion" />
+		<property name="id_cliente" type="double" />
+		<property name="id_region" type="double" />
+		<property name="status" type="double" />
+	</entity>
+	<entity name="Actor">
+		<id name="id_actor" />
+		<property name="nombre" type="varchar" />
+		<property name="direccion" type="varchar" />
+		<property name="telefono" type="varchar" />
+		<property name="extension" type="varchar" />
+		<property name="celular" type="varchar" />
+		<property name="correo" type="varchar" />
+		<property name="nss" type="varchar" />
+	</entity>
+	<entity name="Demandado">
+		<id name="id_demandado" />
+		<property name="nombre" type="varchar" />
+		<property name="direccion" type="varchar" />
+		<property name="telefono" type="varchar" />
+		<property name="extension" type="varchar" />
+		<property name="celular" type="varchar" />
+		<property name="correo" type="varchar" />
+		<property name="nss" type="varchar" />
+	</entity>
+	<entity name="Expedientes">
+		<id name="id_expediente" />
+		<property name="id_cliente" type="double" />
+		<property name="tipo" type="int" />
+		<property name="juiciosRelacionados" type="varchar" />
+		<property name="comentarios" type="varchar" />
+		<property name="status" type="int" />
+		<property name="noExterno" type="varchar" />
+		<property name="accion" type="varchar" />
+	</entity>
+	<entity name="ActorExpediente">
+		<id name="id_actorExpediente" />
+		<property name="id_expediente" type="double" />
+		<property name="id_actor" type="double" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="DemandadoExpediente">
+		<id name="id_demandadoExpediente" />
+		<property name="id_expediente" type="double" />
+		<property name="id_demandado" type="double" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="Tareas">
+		<id name="id_tarea" />
+		<property name="id_expediente" type="double" />
+		<property name="id_abogado" type="double" />
+		<property name="titulo" type="varchar" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="fechaEjecucion" type="varchar" />
+		<property name="horasInvertidas" type="varchar" />
+		<property name="noIdentificacion" type="varchar" />
+		<property name="quienAlta" type="varchar" />
+		<property name="confirmado" type="varchar" />
+		<property name="tipo" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="TareasAdjuntos">
+		<id name="id_tareasAdjuntos" />
+		<property name="id_tarea" type="double" />
+		<property name="id_archivoAdjunto" type="double" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="AbogadoExpediente">
+		<id name="id_abogadoExpediente" />
+		<property name="id_expediente" type="double" />
+		<property name="id_abogado" type="double" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="Juzgados">
+		<id name="id_juzgado" />
+		<property name="nombre" type="double" />
+		<property name="nombreTitular" type="varchar" />
+		<property name="direccion" type="varchar" />
+		<property name="telefono" type="varchar" />
+		<property name="noJuzgado" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="ExpedienteJuzgado">
+		<id name="id_expedienteJuzgado" />
+		<property name="id_expediente" type="double" />
+		<property name="id_juzgado" type="double" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="int" />
+	</entity>
+	<entity name="Tarea">
+		<id name="id_tarea" />
+		<property name="id_expediente" type="double" />
+		<property name="id_juzgado" type="double" />
+		<property name="id_abogado" type="double" />
+		<property name="titulo" type="varchar" />
+		<property name="descripcion" type="varchar" />
+		<property name="etapa" type="varchar" />
+		<property name="direccion" type="varchar" />
+		<property name="fechaHoraInicio" type="varchar" />
+		<property name="fechaHoraFin" type="varchar" />
+		<property name="horasInvertidas" type="varchar" />
+		<property name="fechaCreacion" type="varchar" />
+		<property name="status" type="varchar" />
+	</entity>
+</schema>
